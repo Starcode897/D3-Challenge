@@ -23,7 +23,7 @@ var chartGroup = svg.append("g")
   .attr("transform", `translate(${margin.left}, ${margin.top})`);
 
 
-d3.csv("wow_data/their_data.csv").then(function(CensusData) {
+d3.csv("wowdata/theirdata.csv").then(function(CensusData) {
   CensusData.forEach(function(data) {
     data.age = +data.age;
     data.smokes = +data.smokes;
